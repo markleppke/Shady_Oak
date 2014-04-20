@@ -1,0 +1,40 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 2751852, 2014-02-19T20:11:18-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Proxima Nova Thin by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/thin/
+ * 
+ * Webfont: Proxima Nova S Thin by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/s-thin/
+ * 
+ * Webfont: Proxima Nova Thin Italic by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/thin-it/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2751852
+ * Licensed pageviews: 2,000,000
+ * Webfonts copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+ * 
+ * © 2014 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/29fd6c");
+
+  
+@font-face {font-family: 'ProximaNovaT-Thin';src: url('webfonts/29FD6C_0_0.eot');src: url('webfonts/29FD6C_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/29FD6C_0_0.woff') format('woff'),url('webfonts/29FD6C_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'ProximaNovaS-Thin';src: url('webfonts/29FD6C_1_0.eot');src: url('webfonts/29FD6C_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/29FD6C_1_0.woff') format('woff'),url('webfonts/29FD6C_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'ProximaNova-ThinIt';src: url('webfonts/29FD6C_2_0.eot');src: url('webfonts/29FD6C_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/29FD6C_2_0.woff') format('woff'),url('webfonts/29FD6C_2_0.ttf') format('truetype');}
+ 

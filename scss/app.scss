@@ -1,36 +1,36 @@
 /**
  * @license
  * MyFonts Webfont Build ID 2733007, 2014-01-25T21:42:08-0500
- * 
+ *
  * The fonts listed in this notice are subject to the End User License
- * Agreement(s) entered into by the website owner. All other parties are 
+ * Agreement(s) entered into by the website owner. All other parties are
  * explicitly restricted from using the Licensed ../fonts/(s).
- * 
+ *
  * You may obtain a valid license at the URLs below.
- * 
+ *
  * Webfont: Proxima Nova Thin by Mark Simonson
  * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/thin/
- * 
+ *
  * Webfont: Proxima Nova A Thin by Mark Simonson
  * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/a-thin/
- * 
+ *
  * Webfont: Proxima Nova S Thin by Mark Simonson
  * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/s-thin/
- * 
+ *
  * Webfont: Proxima Nova Thin Italic by Mark Simonson
  * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/thin-it/
- * 
+ *
  * Webfont: Proxima Nova S Thin Italic by Mark Simonson
  * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/s-thin-it/
- * 
+ *
  * Webfont: Proxima Nova A Thin Italic by Mark Simonson
  * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/a-thin-it/
- * 
- * 
+ *
+ *
  * License: http://www.myfonts.com/viewlicense?type=web&buildid=2733007
  * Licensed pageviews: 1,000,000
  * ../fonts/ copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
- * 
+ *
  * © 2014 MyFonts Inc
 */
 
@@ -49,12 +49,8 @@
     font-weight: normal;
     font-style: normal;
 }
-@font-face {font-family: 'ProximaNovaT-Thin';src: url('../webfonts/29FD6C_0_0.eot');src: url('../webfonts/29FD6C_0_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/29FD6C_0_0.woff') format('woff'),url('../webfonts/29FD6C_0_0.ttf') format('truetype');}  
-@font-face {font-family: 'ProximaNovaS-Thin';src: url('../webfonts/29FD6C_1_0.eot');src: url('../webfonts/29FD6C_1_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/29FD6C_1_0.woff') format('woff'),url('../webfonts/29FD6C_1_0.ttf') format('truetype');}
 @font-face {font-family: 'ProximaNova-ThinIt';src: url('../webfonts/29FD6C_2_0.eot');src: url('../webfonts/29FD6C_2_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/29FD6C_2_0.woff') format('woff'),url('../webfonts/29FD6C_2_0.ttf') format('truetype');}
-//@font-face {font-family: 'ProximaNova-Light';src: url('../webfonts/29FD6D_0_0.eot');src: url('../webfonts/29FD6D_0_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/29FD6D_0_0.woff') format('woff'),url('../webfonts/29FD6D_0_0.ttf') format('truetype');}
-//@font-face {font-family: 'ProximaNova-Regular';src: url('webfonts/29FD6D_1_0.eot');src: url('../webfonts/29FD6D_1_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/29FD6D_1_0.woff') format('woff'),url('../webfonts/29FD6D_1_0.ttf') format('truetype');}
-  
+
 
 /*
 =FOUNDATION IMPORTS ***************************************************************************/
@@ -105,8 +101,6 @@
 body {
 	-webkit-font-smoothing: subpixel-antialiased;
 }
-//body { padding-top: 8em; }
-//	.lt-ie9 body { padding-top: 7em; }
 
 /*
 =TYPOGRAPHY***************************************************************************/
@@ -133,12 +127,14 @@ blockquote {
 .top-bar {
 	-webkit-box-shadow: 0 1px 2px 2px rgba(0,0,0,.1);
 	box-shadow: 0 1px 2px 2px rgba(0,0,0,.1);
-	background: url('../images/bkgnd-topbar.jpg') repeat center top ; 
+	background: url('../images/bkgnd-topbar.jpg') repeat center top;
+	.name h1 {
+		line-height: 5.33333rem;}
 }
 .bullet {
 	color:#98b860;
 	font-size:28px;
-	line-height:86px;
+	line-height:94px;
 }
 
 /*.lt-ie9 .top-bar .name h1 img {
@@ -155,7 +151,9 @@ blockquote {
 	box-shadow: 0 0 0 0 white, 0 0 0 0 white, 0 0 0 0 white;
 }
 
-
+.top-bar-section li:active {
+background-color: transparent;
+}
 
 /*
 =CUSTOM***************************************************************************/
@@ -165,7 +163,7 @@ blockquote {
 }
 
 .direct {
-	font-size: 1.3em; 
+	font-size: 1.3em;
 	line-height: .4;
 	vertical-align: -10%;
 }
@@ -187,20 +185,26 @@ table tr td {
 	background-color: none;
 	font-size: .85em;
 	padding: 0px;
-
 	}
 
 footer {
-	font-size: .9em;
+	font-size: rem-calc(10);
 	padding-bottom: 2em;
+	color:gray;
 }
 
-
+address.vcard {
+	font-style: normal;
+	line-height: 1.5;
+	margin-bottom:20px;
+}
 .panel ul {margin-left:0px;}
 
 .copyright {
 	display:inline;
-	line-height: 20px;
+	line-height: 15px;
+	font-size: rem-calc(10);
+
 }
 .fb-follow {
 	vertical-align:middle;
@@ -209,35 +213,32 @@ footer {
 }
 
 .call-to-action {
-		margin-top: .8em;
-		padding-bottom: 1em;
-		color:#98b860;
-		.call-us {
-			font-size: rem-calc(18);
-			margin-right: .5em;
-			font-family: ProximaNova-ThinIt;
+	font-family: ProximaNova-ThinIt;
+	font-size: rem-calc(18);
+	margin-top: .8em;
+	padding-bottom: 1em;
+	color:#98b860;
+	.call-us {
+		margin-right: .5em;
 		}
-	.phone-number {
-		font-family: ProximaNovaS-Thin; 
-		font-weight: normal;
-		font-style: normal;
-		font-size: rem-calc(18);
-		}
+	a, a:link, a:visited, a:active { color:#98b860; }
+	.phone-number a:link {
+		line-height:0;
+		padding:0;}
 	}
-	.lt-ie9 .phone-number {	font-family: ProximaNovaT-Thin; }	
-	
+
 @media #{$large-up} {
 	.top-bar-section ul { background-color: transparent; }
 	.top-bar-section li a:not(.button), .top-bar-section li { background-color: transparent; }
   	.top-bar-section li a:hover:not(.button), .top-bar-section li:hover {background-color: transparent;}
   	.call-to-action {
-  		padding: 0 3em;
+  		padding: 0 2em;
   		line-height: 90px;
-		.call-us { 
-			font-size: rem-calc(12); 
-			line-height: 2; 
+		.call-us {
+			font-size: rem-calc(12);
+			line-height: 2;
 			}
-		.phone-number {	
+		.phone-number {
 			font-size: rem-calc(16);
 			line-height: 1.2;
 			}
@@ -250,25 +251,33 @@ footer {
 	.top-bar-section li a:not(.button), .top-bar-section li { background-color: transparent; }
  	.top-bar-section li a:hover:not(.button), .top-bar-section li:hover {background-color: transparent;}
  	.call-to-action {
-		.phone-number, .call-us  {color:#698f26;}
+ 		color:#698f26;
+		a:link  {
+			font-size: rem-calc(15);
+			color: inherit;
+			}
 	}
 }
 
 
-@media #{$small-only} { 
+@media #{$small-only} {
 	.hero .columns {padding: 0px;}
 	.top-bar.expanded .title-area {	background: url('../images/bkgnd-topbar.jpg') repeat center top ; }
 	.top-bar, .top-bar .expanded {
-		.name h1 { 
-			a { width: 65%; } 
+		.name h1 {
+			a { width: 65%; }
 			}
 		}
 	.call-to-action {
-		.call-us, .phone-number { font-size: rem-calc(15);color:#698f26; }
+		color:#698f26;
+		a:link  {
+			font-size: rem-calc(15);
+			color: inherit;
+			}
 	}
 }
-	
 
+/*
 HTML.lt-ie9 {
 
     .small-1.columns,.medium-1.columns,.large-1.columns {width:8.0% !important;}
@@ -283,13 +292,13 @@ HTML.lt-ie9 {
     .small-10.columns,.medium-10.columns,.large-10.columns {width:83.0% !important;}
     .small-11.columns,.medium-11.columns,.large-11.columns {width:91.0% !important;}
     .small-12.columns,.medium-12.columns,.large-12.columns {width:100% !important;}
- 
- 
+
+
     .top-bar-section UL { width:inherit !important; }
     .top-bar-section UL LI { float:left !important; }
     .top-bar { height:inherit !important; }
        .row { width: 960px !important; }
        .row .row { width: 100% !important; }
- 
+
 }
-        
+*/

@@ -104,22 +104,18 @@ body {
 
 /*
 =TYPOGRAPHY***************************************************************************/
-
-h2, .panel h2 {
+h1, h2, .panel h2, blockquote {
 	font-family: rustyshandregular;
-	font-size: 1.8em;
 	color: #708748;
+}
+h2, .panel h2 {
+	font-size: 1.8em;
 }
 h3, .panel h3 {
 	font-size: 1.4em;
 }
-blockquote {
-	font-family: rustyshandregular;
-	font-weight: normal;
-	font-style: normal;
-	color:#5f7e28;
-	font-size: rem-calc(18);
-}
+blockquote { font-size: rem-calc(18); }
+p > a:link {text-decoration: underline;}
 
 /*
 =TOPBAR***************************************************************************/
@@ -129,7 +125,7 @@ blockquote {
 	box-shadow: 0 1px 2px 2px rgba(0,0,0,.1);
 	background: url('../images/bkgnd-topbar.jpg') repeat center top;
 	.name h1 {
-		line-height: 5.33333rem;}
+		line-height: 6rem;}
 }
 .bullet {
 	color:#98b860;
@@ -151,9 +147,6 @@ blockquote {
 	box-shadow: 0 0 0 0 white, 0 0 0 0 white, 0 0 0 0 white;
 }
 
-.top-bar-section li:active {
-background-color: transparent;
-}
 
 /*
 =CUSTOM***************************************************************************/
@@ -197,6 +190,7 @@ address.vcard {
 	font-style: normal;
 	line-height: 1.5;
 	margin-bottom:20px;
+	display:block;
 }
 .panel ul {margin-left:0px;}
 
@@ -261,6 +255,10 @@ address.vcard {
 
 
 @media #{$small-only} {
+	.top-bar-section ul { background-color: #000; }
+	.top-bar-section li a:not(.button), .top-bar-section li { background-color: transparent; }
+ 	.top-bar-section li a:hover:not(.button), .top-bar-section li:hover {background-color: transparent;}
+
 	.hero .columns {padding: 0px;}
 	.top-bar.expanded .title-area {	background: url('../images/bkgnd-topbar.jpg') repeat center top ; }
 	.top-bar, .top-bar .expanded {

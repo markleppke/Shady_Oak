@@ -22,7 +22,7 @@
 $rem-base: 12px;
 
 // We use these to control header font styles
-$header-font-family: ProximaNovaT-Thin, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$header-font-family: ProximaNova-ThinIt, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 $header-font-weight: bold;
 $header-font-style: normal;
 $header-font-color: #222;
@@ -59,7 +59,6 @@ $include-html-classes: true;
 
 // We use this to set default opacity for disabled buttons.
 // $button-disabled-opacity: 0.6;
-
 
 // Grid
 
@@ -129,13 +128,12 @@ $screen: "only screen";
 
 
 // We use these to style blockquotes
-$blockquote-font-color: #5f7e28; //scale-color($header-font-color, $lightness: 35%)
+$blockquote-font-color: #708748; //scale-color($header-font-color, $lightness: 35%)
 $blockquote-padding: 0px; // rem-calc(9 20 0 19);
 $blockquote-border: 0px; //1px solid #ddd
 //$blockquote-cite-font-size: rem-calc(21);
 //$blockquote-cite-font-color: scale-color($header-font-color, $lightness: 23%);
 //$blockquote-cite-link-color: $blockquote-cite-font-color;
-
 
 $include-html-button-classes: $include-html-classes;
 
@@ -1035,9 +1033,9 @@ $topbar-link-color-active: #98b860;
 // $topbar-link-weight: normal;
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
-//$topbar-link-bg-hover: transparent ;
-//$topbar-link-bg-active: black;
-//$topbar-link-bg-active-hover: transparent;
+$topbar-link-bg-hover: transparent;
+$topbar-link-bg-active: transparent;
+$topbar-link-bg-active-hover: transparent;
 // $topbar-link-font-family: $body-font-family;
 
 // $topbar-button-font-size: 0.75rem;
@@ -1060,8 +1058,8 @@ $topbar-link-color-active: #98b860;
 // Transitions and breakpoint styles
 // $topbar-transition-speed: 300ms;
 // Using rem-calc for the below breakpoint causes issues with top bar
-// $topbar-breakpoint: #{upper-bound($medium-range)}; // Change to 9999px for always mobile layout
-// $topbar-media-query: "only screen and (min-width: #{upper-bound($medium-range)})";
+$topbar-breakpoint: 693px; // Change to 9999px for always mobile layout
+$topbar-media-query: "only screen and (min-width: 693px)";
 
 // Divider Styles
 // $topbar-divider-border-bottom: solid 1px lighten($topbar-bg-color, 10%);

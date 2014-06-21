@@ -195,15 +195,11 @@ address.vcard {
 .panel ul {margin-left:0px;}
 
 .copyright {
-	display:inline;
-	line-height: 15px;
 	font-size: rem-calc(10);
-
+	margin-bottom: rem-calc(3);
 }
 .fb-follow {
-	vertical-align:middle;
-	line-height: 1;
-	display: inline;
+
 }
 
 .call-to-action {
@@ -246,6 +242,7 @@ address.vcard {
  	.top-bar-section li a:hover:not(.button), .top-bar-section li:hover {background-color: transparent;}
  	.call-to-action {
  		color:#698f26;
+ 		text-align: right;
 		a:link  {
 			font-size: rem-calc(15);
 			color: inherit;
@@ -268,6 +265,8 @@ address.vcard {
 		}
 	.call-to-action {
 		color:#698f26;
+		text-align:left;
+		.phone-number {display:inline-block; }
 		a:link  {
 			font-size: rem-calc(15);
 			color: inherit;
